@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudySync - Gamified Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <h1>📚 StudySync</h1>
+
+            <p>
+                Learn • Complete • Earn • Grow 🚀
+            </p>
+
+        </div>
+
+
+        <!-- DASHBOARD -->
+        <div class="dashboard">
+
+            <!-- PROGRESS -->
+            <div class="stat-card progress-card">
+
+                <h3>📊 Today's Progress</h3>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        id="progressBar">
+                    </div>
+
+                </div>
+
+                <p id="progressText">
+                    0% Completed
+                </p>
+
+            </div>
+
+
+            <!-- COINS -->
+            <div class="stat-card coin-card">
+
+                <h3>🪙 Study Coins</h3>
+
+                <div class="coins">
+
+                    🪙
+                    <span id="coinCount">
+                        0
+                    </span>
+
+                </div>
+
+                <p>
+                    Complete tasks to earn coins!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADD TASK -->
+        <h2 class="section-title">
+            ➕ Add New Study Task
+        </h2>
+
+
+        <div class="add-task">
+
+            <input
+                type="text"
+                id="subjectInput"
+                placeholder="Enter subject">
+
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter study task">
+
+
+            <input
+                type="text"
+                id="timeInput"
+                placeholder="Enter time">
+
+
+            <button onclick="addTask()">
+
+                ➕ Add Task
+
+            </button>
+
+        </div>
+
+
+        <!-- DAILY PLAN -->
+        <h2 class="section-title">
+
+            📅 My Daily Learning Plan
+
+        </h2>
+
+
+        <!-- TASKS WILL BE CREATED BY JAVASCRIPT -->
+
+        <div
+            class="timetable"
+            id="timetable">
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
